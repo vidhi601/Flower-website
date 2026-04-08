@@ -1,2 +1,12 @@
 # Flower-website
-Responsive Flower Website built using HTML &amp; CSS with clean UI design
+
+This is a responsive flower website built using HTML and CSS.
+
+ Features:
+- Clean and modern UI
+- Fully responsive design
+- Organized layout
+
+ Tech Used:
+- HTML
+- CSS
