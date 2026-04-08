@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FloraVibe Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-checkout">
+
+    <nav class="navbar">
+        <div class="navbar__logo">FLORA<span>VIBE</span></div>
+        <a href="flower.html" class="nav__link"><i class="fa-solid fa-arrow-left"></i> Back to Shop</a>
+    </nav>
+
+    <main class="checkout-container">
+        <div class="checkout-grid">
+            <div class="checkout-form">
+                <h2 class="section-heading">Delivery Details</h2>
+                <form id="orderForm" onsubmit="handleOrder(event)">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Shipping Address</label>
+                        <textarea placeholder="Your full address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+                    <button type="submit" class="btn--primary" style="width: 100%;">Place Order</button>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div id="checkout-items">
+                    </div>
+                <hr>
+                <div class="total-row">
+                    <span>Grand Total:</span>
+                    <span>₹<span id="final-total">0</span></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Order Placed Successfully!</h2>
+            <p>Your blooms are on their way to brighten someone's day.</p>
+            <a href="flower.html" class="btn--primary">Return Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
